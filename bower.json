@@ -1,0 +1,17 @@
+{
+  "name": "Bachelorproef",
+  "authors": [
+    "marijnhosten <marijn.hosten@student.howest.be>"
+  ],
+  "description": "Verslagen",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "angular": "angularjs#^1.4.9",
+    "bootstrap": "^3.3.6",
+    "font-awesome": "^4.5.0",
+    "hanselsen/ngTour": "ng-route#*"
+  }
+}

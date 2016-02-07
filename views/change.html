@@ -1,0 +1,22 @@
+<div ng-include="'views/header.html'"></div>
+<section>
+    <h1>Verander uw wachtwoord</h1>
+    <div class="col-md-4 col-md-offset-4">
+        <form name="changeForm" novalidate>
+            <div class="form-group">
+                <label for="txtPassword1">Oud wachtwoord</label>
+                <input class="form-control" type="password" id="txtPassword1" name="txtPassword1" ng-model="user.password1" required>
+                <p ng-show="showPass1" class="help-block">Uw origineel wachtwoord is niet juist.</p>
+
+            </div>
+            <div class="form-group">
+                <label for="txtPassword2">Nieuw wachtwoord</label>
+                <input class="form-control" type="password" id="txtPassword2" name="txtPassword2" ng-model="user.password2" required>
+                <p ng-show="showPass2" class="help-block">Uw nieuw wachtwoord mag niet uw oud wachtwoord zijn.</p>
+            </div>
+            <div class="form-group">
+                <input ng-disabled="changeForm.$invalid" class="btn btn-primary" type="submit" ng-click="change(user)" value="Change">
+            </div>
+        </form>
+    </div>
+</section>

@@ -1,0 +1,20 @@
+<section>
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="https://student.howest.be/marijn.hosten/portfolio" target="_blank">Marijn Hosten</a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav">
+                <li ng-hide="isLoggedIn" ng-class="getClass('/login')"><a href="#/">Login</a></li>
+                <li ng-show="true" ng-class="getClass('/stage')"><a href="#stage">Stage</a></li>
+                <li ng-show="isChanged" ng-class="getClass('/change')"><a href="#change">Wachtwoord wijzigen</a></li>
+                <li ng-show="isLoggedIn" ng-class="getClass('/verslag')"><a href="#verslag">Verslagen</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="nav navbar-nav navbar-right">
+                <li ng-show="isLoggedIn"><a class="logout" ng-click="logout()" href="">Afmelden</a></li>
+            </ul>
+        </div>
+    </nav>
+</section>
